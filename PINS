@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+class PINS {
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	int T=sc.nextInt();
+  //For taking test cases
+	while(T>0){
+  //For Number or digits u want in pin
+	int n=sc.nextInt();
+		int sum=10;
+		int count=0;
+    //For 
+		for(int i=1;i<n;i++) {
+			if(i%2==0) {
+				count++;
+			}
+		int buffer= (int) (9*Math.pow(10, count));
+		sum=sum+buffer;//number of palindromic numbers of n digits
+			
+		}
+		if(n==1) {
+			System.out.println("1 1");
+		}else {
+			System.out.println(sum+" "+(int)Math.pow(10, n));
+		}
+		
+	T--;}
+		}
+ }
